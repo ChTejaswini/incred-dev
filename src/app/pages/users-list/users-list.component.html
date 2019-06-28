@@ -1,0 +1,18 @@
+<div>
+        <a routerLink="/login" routerLinkActive="active">Back</a>
+<ul> 
+<li *ngFor='let name of userData'>
+    <p (click)="showdetail(name)">{{name.Name}}</p>
+    </li>
+</ul>
+
+<div *ngIf='showuser'>
+        <div *ngFor='let name of userData'>
+                        <h3> {{name.EmpID}}</h3>
+                        <h3>{{name.Name}}</h3>
+               
+        </div>
+               </div>
+ 
+</div>
+ 
